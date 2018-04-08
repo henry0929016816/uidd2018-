@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <script src="jquery-3.3.1.min.js"></script>
+        <style type="text/css">
+        body{
+            background: url(picture/p2/Png-02.png);
+        }
+        .container{
+            height:100%;
+            width:100%;
+
+        }
+        .top_container{
+            height:40%;
+            width:100%;
+        }
+        .reel_container{
+            position: relative;
+            height:50%;
+            width: 100%;
+        }
+        .reel_l{
+            position:absolute;
+            right:27%;
+            height:100%;
+            width:10%;
+            background: url(picture/p2/Png-04.png);
+            background-repeat: no-repeat;
+            background-position:right 0;
+            background-size:auto 100%;
+            
+            
+        }
+        .reel_m{
+            position:absolute;
+            right:27%;
+            height:100%;
+            width:0%;
+            background: url(picture/p2/Png-05.png);
+            background-repeat: no-repeat;
+            background-position:top 50% right 0;
+            background-size:auto 90%;
+        }
+        .reel_r{
+            position:absolute;
+            right:17%;
+            height:100%;
+            width:10%;
+            background: url(picture/p2/Png-04.png);
+            background-repeat: no-repeat;
+            background-position:left 0;
+            background-size:auto 100%;
+            
+            
+        }
+        .top1{
+            position:absolute;
+            top:5%;
+            height:10%;
+            width:100%;
+            background: url(picture/p2/Png-45.png);
+            background-repeat: no-repeat;
+            background-position:center;
+        }
+        .top2{
+            position:absolute;
+            top:15%;
+            height:10%;
+            width:100%;
+            background: url(picture/p2/Png-46.png);
+            background-repeat: no-repeat;
+            background-position:center;
+        }
+        .top3{
+            position:absolute;
+            top:28%;
+            height:10%;
+            width:100%;
+            background: url(picture/p2/Png-47.png);
+            background-repeat: no-repeat;
+            background-position:center;
+        }
+        .content{
+            display:none;
+            position:absolute;
+            top:19%;
+            right:27%;
+            height:60%;
+            width:50%;
+            background: url(picture/p3/word-08.png);
+            background-repeat: no-repeat;
+            background-position:top 20% right 0;
+            background-size:contain;
+        }
+       
+        
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_container">
+                <div class=top1></div>
+                <div class=top2></div>
+                <div class=top3></div>
+            </div>
+            <div class="reel_container">
+                <div class="reel_l"></div>
+                <div class="reel_m"></div>
+                <div class="content"></div>
+                <div class="reel_r"></div>
+            </div>      
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $(".reel_l").animate({right: '73%'},1500);
+            $(".reel_m").animate({width: '46%'},1500);
+            $(".content").fadeIn(3500);
+
+        });
+    </script>      
+    </body>
+</html>
