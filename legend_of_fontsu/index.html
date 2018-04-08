@@ -81,7 +81,7 @@
             background-repeat: no-repeat;
             background-position:center;
         }
-        .content{
+        .content1{
             display:none;
             position:absolute;
             top:19%;
@@ -93,7 +93,57 @@
             background-position:top 20% right 0;
             background-size:contain;
         }
-       
+        .content2{
+            
+            position:absolute;
+            top:19%;
+            right:27%;
+            height:60%;
+            width:50%;
+            background: url(picture/p4/Png-27.png) ,url(picture/p4/Png-12.png);
+            background-repeat: no-repeat;
+            background-position:top  right;
+            background-position:top 20% right 0%,top 20% right 30%; 
+            background-size:auto 60%,contain;
+           
+            
+        }
+        .content3{
+            position:absolute;
+            top:19%;
+            right:27%;
+            height:60%;
+            width:50%;
+            background: url(picture/p5/Png-26.png) ,url(picture/p5/Png-13.png);
+            background-repeat: no-repeat;
+            background-position:top  right;
+            background-position:top 20% right 0%,top 20% right 30%; 
+            background-size:auto 60%,contain;
+        }
+        .content4{
+            position:absolute;
+            top:19%;
+            right:27%;
+            height:60%;
+            width:50%;
+            background: url(picture/p6/Png-25.png) ,url(picture/p6/Png-14.png);
+            background-repeat: no-repeat;
+            background-position:top  right;
+            background-position:top 20% right 0%,top 20% right 30%; 
+            background-size:auto 60%,contain;
+        }
+        .content5{
+            position:absolute;
+            top:19%;
+            right:27%;
+            height:60%;
+            width:50%;
+            background: url(picture/p7/png50.png) ,url(picture/p7/Png-15.png);
+            background-repeat: no-repeat;
+            background-position:top  right;
+            background-position:top 20% right 0%,top 20% right 30%; 
+            background-size:auto 60%,contain;
+        }
         
         </style>
 
@@ -108,7 +158,7 @@
             <div class="reel_container">
                 <div class="reel_l"></div>
                 <div class="reel_m"></div>
-                <div class="content"></div>
+                <div class="content1"></div>
                 <div class="reel_r"></div>
             </div>      
         </div>
@@ -117,7 +167,28 @@
         {
             $(".reel_l").animate({right: '73%'},1500);
             $(".reel_m").animate({width: '46%'},1500);
-            $(".content").fadeIn(3500);
+            $(".content1").fadeIn(3500);
+            $(".content1").click(function(){
+                $(".content1").addClass("content2").removeClass("content1");
+                $(".content2").click(function(){
+                    $(".content2").addClass("content3").removeClass("content2");
+                    
+                    $(".content3").click(function(){
+                    $(".content3").addClass("content4").removeClass("content3");
+                        $(".content4").click(function(){
+                         $(".content4").addClass("content5").removeClass("content4");
+                
+                
+                    });
+                        
+                });
+                
+                });
+                
+            });
+             
+
+
 
         });
     </script>      
